@@ -17,5 +17,5 @@
   "description": "App para gestão financeira.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "linear-gradient(145deg, rgba(33,34,45,1) 0%, rgba(58,44,58,1) 100%)"
+  "theme_color": "#171821"
 }
