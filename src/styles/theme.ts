@@ -30,6 +30,7 @@ export default {
     background: "#171821",
     panel: "#21222D",
     white: "#fff",
+    black: "#030517",
     lightGray: "#EEEEF2",
     gray: "#797D9A",
     green: "#3CD3C1",
