@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WalletMessageCard /> should render currectly 1`] = `
+.c0 {
+  background: linear-gradient(145deg,rgba(33,34,45,1) 0%,rgba(58,44,58,1) 100%);
+  width: 34rem;
+  padding: 2.0rem 4.0rem;
+  border-radius: 1.6rem;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  place-items: center;
+}
+
+.c2 {
+  font-size: 1.3rem;
+  color: #797D9A;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    Muito bem, sua carteira está positiva!
+    <span
+      class="c2"
+    >
+      Considere investir o seu saldo!
+    </span>
+  </p>
+</div>
+`;
