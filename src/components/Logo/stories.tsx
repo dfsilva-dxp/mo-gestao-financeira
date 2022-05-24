@@ -26,11 +26,16 @@ export default {
   },
   parameters: {
     layout: "centered"
-  }
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ margin: "0 auto" }}>
+        <Story />
+      </div>
+    )
+  ]
 } as Meta;
 
 export const Default: Story<ComponentProps<typeof Logo>> = ({ ...props }) => (
-  <div>
-    <Logo {...props} />
-  </div>
+  <Logo {...props} />
 );

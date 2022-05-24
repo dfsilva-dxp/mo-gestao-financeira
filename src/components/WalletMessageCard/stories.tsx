@@ -4,7 +4,7 @@ import { ComponentProps } from "react";
 import WalletMessageCard from ".";
 
 export default {
-  title: "WalletMessageCard",
+  title: "Components/WalletMessageCard",
   component: WalletMessageCard,
   argTypes: {},
   parameters: {
