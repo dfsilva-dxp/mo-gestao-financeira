@@ -1,5 +1,4 @@
-import styled, { css, DefaultTheme } from "styled-components";
-import { BalanceCardProps } from "./types";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -47,44 +46,5 @@ export const Percentage = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     color: ${theme.colors.green};
-  `}
-`;
-
-export const ProgressBar = styled.div`
-  ${({ theme }) => css`
-    margin-top: ${theme.spacings.xxsmall};
-    width: 100%;
-  `}
-`;
-
-const progressModifiers = {
-  primary: (theme: DefaultTheme) => css`
-    background: ${theme.colors.primary};
-  `,
-  secondary: (theme: DefaultTheme) => css`
-    background: ${theme.colors.secondary};
-  `
-};
-
-type ProgressProps = Pick<BalanceCardProps, "progressBar" | "color">;
-
-export const Progress = styled.div<ProgressProps>`
-  ${({ theme, progressBar, color }) => css`
-    background: ${theme.colors.black};
-    width: 100%;
-    height: 1rem;
-    border-radius: ${theme.border.radius.default};
-    position: relative;
-
-    &::after {
-      content: "";
-      background: ${theme.colors.secondary};
-      width: ${`${progressBar}%`};
-      height: 1rem;
-      border-radius: ${theme.border.radius.default};
-      position: absolute;
-
-      ${!!color && progressModifiers[color](theme)}
-    }
   `}
 `;

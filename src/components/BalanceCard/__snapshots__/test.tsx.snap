@@ -1,6 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BalanceCard /> should render the currectly 1`] = `
+.c7 {
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.c8 {
+  background: #030517;
+  width: 100%;
+  height: 1rem;
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.c8::after {
+  content: "";
+  background: #96A7FF;
+  width: 80%;
+  height: 1rem;
+  border-radius: 1.6rem;
+  position: absolute;
+  background: #F9769D;
+}
+
 .c0 {
   background: linear-gradient(145deg,rgba(33,34,45,1) 0%,rgba(58,44,58,1) 100%);
   padding: 2.0rem 4.0rem;
@@ -54,29 +77,6 @@ exports[`<BalanceCard /> should render the currectly 1`] = `
 .c6 {
   font-size: 1.4rem;
   color: #3CD3C1;
-}
-
-.c7 {
-  margin-top: 0.8rem;
-  width: 100%;
-}
-
-.c8 {
-  background: #030517;
-  width: 100%;
-  height: 1rem;
-  border-radius: 1.6rem;
-  position: relative;
-}
-
-.c8::after {
-  content: "";
-  background: #96A7FF;
-  width: 80%;
-  height: 1rem;
-  border-radius: 1.6rem;
-  position: absolute;
-  background: #F9769D;
 }
 
 <div

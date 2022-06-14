@@ -22,26 +22,9 @@ describe("<BalanceCard />", () => {
 
     expect(screen.getByText("R$8916,07")).toBeInTheDocument();
     expect(screen.getByText("+5%")).toBeInTheDocument();
+    expect(
+      screen.getByRole("progressbar", { name: /progress bar/i })
+    ).toBeInTheDocument();
     expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it("should render primary color by default", () => {
-    renderWithTheme(<BalanceCard {...props} />);
-
-    expect(
-      screen.getByRole("progressbar", { name: /progress bar/i })
-    ).toHaveStyleRule("background", "#F9769D", {
-      modifier: "::after"
-    });
-  });
-
-  it("should render #96A7FF when secondary color is passed", () => {
-    renderWithTheme(<BalanceCard {...props} color="secondary" />);
-
-    expect(
-      screen.getByRole("progressbar", { name: /progress bar/i })
-    ).toHaveStyleRule("background", "#96A7FF", {
-      modifier: "::after"
-    });
   });
 });
