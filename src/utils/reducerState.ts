@@ -1,4 +1,4 @@
-import { DefaultValues } from "components/DateInputFilter/types";
+import { DefaultValues } from "components/FilterInputByDate/types";
 
 const reducer = (prevState: DefaultValues, newState: DefaultValues) => ({
   ...prevState,
