@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DateInputFilter /> should render with label 1`] = `
+exports[`<FilterInputByDate /> should render with label 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
