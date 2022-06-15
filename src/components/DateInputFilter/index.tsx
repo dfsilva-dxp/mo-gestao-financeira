@@ -12,7 +12,7 @@ const INITIAL_VALUES: DefaultValues = {
   formatted: "jan. de 2020"
 };
 
-export default function DateInput() {
+export default function DateInputFilter() {
   const [date, setDate] = useReducer(reducer, INITIAL_VALUES);
 
   const { format } = useDate();

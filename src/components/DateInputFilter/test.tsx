@@ -2,11 +2,11 @@ import { screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { renderWithTheme } from "utils/tests/helpers";
 
-import DateInput from ".";
+import DateInputFilter from ".";
 
-describe("<DateInput />", () => {
+describe("<DateInputFilter />", () => {
   it("should render with label", () => {
-    const { container } = renderWithTheme(<DateInput />);
+    const { container } = renderWithTheme(<DateInputFilter />);
 
     expect(screen.getByLabelText(/jun\. de 2022/i)).toBeInTheDocument();
 
@@ -14,7 +14,7 @@ describe("<DateInput />", () => {
   });
 
   it("should is accessible by tab", () => {
-    renderWithTheme(<DateInput />);
+    renderWithTheme(<DateInputFilter />);
 
     const input = screen.getByLabelText(/jun\. de 2022/i);
 
@@ -25,7 +25,7 @@ describe("<DateInput />", () => {
   });
 
   it("should change display when change input value", () => {
-    renderWithTheme(<DateInput />);
+    renderWithTheme(<DateInputFilter />);
 
     const input = screen.getByLabelText(/data-filter/i);
 
