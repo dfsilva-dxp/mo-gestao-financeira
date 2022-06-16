@@ -57,6 +57,7 @@ exports[`<FilterInputByDate /> should render with label 1`] = `
   <input
     aria-label="data-filter"
     id="date-filter"
+    max="2022-06"
     name="date-filter"
     type="month"
     value="2022-06"

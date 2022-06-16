@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useReducer } from "react";
+import { ChangeEvent, useEffect, useReducer, useState } from "react";
 
 import { useDate } from "hooks";
 
@@ -14,6 +14,7 @@ const INITIAL_VALUES: DefaultValues = {
 
 export default function FilterInputByDate() {
   const [date, setDate] = useReducer(reducer, INITIAL_VALUES);
+  const [currentDate, setCurrentDate] = useState("");
 
   const { format } = useDate();
 
@@ -31,6 +32,8 @@ export default function FilterInputByDate() {
       locale: "pt-br",
       pattern: "YYYY-MM"
     });
+
+    setCurrentDate(defaultValue);
 
     setDate({
       default: defaultValue,
@@ -63,6 +66,7 @@ export default function FilterInputByDate() {
         aria-label="data-filter"
         value={date.default}
         onChange={handleChange}
+        max={currentDate}
       />
     </Wrapper>
   );
