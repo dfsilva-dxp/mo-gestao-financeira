@@ -1,13 +1,13 @@
 import { TiChartLineOutline } from "react-icons/ti";
 
+import { ProgressBar } from "components";
+
 import {
   Balance,
   CardBody,
   Header,
   Icon,
   Percentage,
-  Progress,
-  ProgressBar,
   Title,
   Wrapper
 } from "./styles";
@@ -36,14 +36,7 @@ export default function BalanceCard({
         {!!percentage && <Percentage>{percentage}</Percentage>}
       </CardBody>
 
-      <ProgressBar>
-        <Progress
-          progressBar={progressBar}
-          color={color}
-          role="progressbar"
-          aria-label="Progress Bar"
-        />
-      </ProgressBar>
+      <ProgressBar progressBar={progressBar} color={color} />
     </Wrapper>
   );
 }

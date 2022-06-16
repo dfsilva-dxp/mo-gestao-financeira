@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterInputByDate /> should render with label 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.c0 [type="month"] {
+  max-width: 1.4rem;
+  background: transparent url("./img/calendar-white-icon.svg") center center/contain no-repeat;
+  border: none;
+  outline: 0;
+}
+
+.c0 [type="month"]:active,
+.c0 [type="month"]:focus {
+  background: transparent url("./img/calendar-pink-icon.svg") center center/contain no-repeat;
+}
+
+.c0 [type="month"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c0 [type="month"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c1 {
+  color: #797D9A;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+<section
+  class="c0"
+>
+  <label
+    class="c1"
+    for="date-filter"
+  >
+    jun. de 2022
+  </label>
+  <input
+    aria-label="data-filter"
+    id="date-filter"
+    max="2022-06"
+    name="date-filter"
+    type="month"
+    value="2022-06"
+  />
+</section>
+`;
